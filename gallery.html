@@ -5,16 +5,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<style>
-    	/* Kode untuk menghilangkan warna, noise, dan garis X pada galeri Phantom */
-    	.tiles article > a {
-        	background: none !important;
-        	background-image: none !important; /* Ini kode khusus pembunuh garis X */
-    	}
-    	.tiles article > a::before,
-    	.tiles article > a::after {
-        	display: none !important;
-    	}
+		<style>
+    		/* Menghilangkan warna background transparan */
+    		.tiles article > a {
+        		background: none !important;
+    		}
+    
+    		/* Mematikan semua elemen bayangan yang membawa garis X dan noise */
+    		.tiles article > a::before,
+    		.tiles article > a::after,
+    		.tiles article > .image::before,
+    		.tiles article > .image::after {
+        		display: none !important;
+        		background-image: none !important;
+    		}
 	</style>
 	<head>
 		<title>Phantom by HTML5 UP</title>
