@@ -12,29 +12,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<style>
-            /* 1. Mengubah Background Utama Web menjadi Coklat Gelap */
-            body, #wrapper {
-                background-color: #522826 !important; /* Kode warna coklat gelap */
-            }
+    	/* 1. Mengubah Background Utama Web menjadi Coklat Gelap */
+    	body, #wrapper {
+        	background-color: #522826 !important;
+    	}
 
-            /* 2. Mengubah Semua Warna Font/Teks menjadi Terang (Putih Gading) */
-            body, p, h1, h2, h3, h4, h5, h6, .logo .title, #menu ul li a {
-                color: #f4ede6 !important;
-            }
+    	/* 2. Mengubah Warna Teks HANYA di bagian Main dan Header menjadi Terang */
+    	#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6,
+    	.logo .title, #menu ul li a {
+        	color: #f4ede6 !important;
+    	}
 
-            /* Menjaga agar garis hiasan di bawah judul ikut menyesuaikan */
-            h1::after, h2::after {
-                background-color: #f4ede6 !important;
-            }
+    	/* Menjaga agar garis hiasan di bawah judul ikut menyesuaikan */
+    	#main h1::after, #main h2::after {
+        	background-color: #f4ede6 !important;
+    	}
 
-            /* 3. Membuat Judul Halaman Berada di Tengah (Center) */
-            #main header h1, h1 {
-                text-align: center !important;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-        </style>
+    	/* 3. Membuat Judul Halaman Berada di Tengah (Center) */
+    	#main header h1, #main h1 {
+        	text-align: center !important;
+        	margin-left: auto;
+        	margin-right: auto;
+        	width: 100%;
+    	}
+	</style>
         </head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -76,6 +77,7 @@
 						<div class="inner">
 							<h1>Tafakkur Ramadhan - Book Cover Design</h1>
 							<span class="image main"><img src="images/TAFAKKUR RAMADHAN MAIN PAGE FULL.webp" alt="" loading="lazy" /></span>
+						</div>
 					</div>
 
 				<!-- Footer -->
