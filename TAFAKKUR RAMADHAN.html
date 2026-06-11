@@ -11,7 +11,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+	<style>
+            /* 1. Mengubah Background Utama Web menjadi Coklat Gelap */
+            body, #wrapper {
+                background-color: #522826 !important; /* Kode warna coklat gelap */
+            }
+
+            /* 2. Mengubah Semua Warna Font/Teks menjadi Terang (Putih Gading) */
+            body, p, h1, h2, h3, h4, h5, h6, .logo .title, #menu ul li a {
+                color: #f4ede6 !important;
+            }
+
+            /* Menjaga agar garis hiasan di bawah judul ikut menyesuaikan */
+            h1::after, h2::after {
+                background-color: #f4ede6 !important;
+            }
+
+            /* 3. Membuat Judul Halaman Berada di Tengah (Center) */
+            #main header h1, h1 {
+                text-align: center !important;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+        </style>
+        </head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
