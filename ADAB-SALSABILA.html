@@ -23,7 +23,29 @@
     	/* Warna putih agar kontras dengan background abu-abu gelap di sidebar */
     	#menu ul li a {
         	color: #FFFFFF !important;
-		}
+
+		/* 5. PENGATURAN HEADER LOGO & NAMA DESAINER */
+    	.logo {
+        	display: inline-flex !important;
+        	align-items: center; /* Menjaga ikon berlian dan teks tetap sejajar tengah */
+    	}
+    	.logo .title-wrapper {
+        	display: flex;
+        	flex-direction: column; /* Membuat teks menumpuk atas-bawah */
+        	justify-content: center;
+    	}
+    	.logo .title {
+        	letter-spacing: 3px !important; /* Ini untuk menurunkan kerning/jarak hurufnya */
+        	line-height: 1 !important;
+    	}
+    	.logo .subtitle {
+        	font-size: 11px; /* Ukuran teks kecil */
+        	font-weight: 600; /* Ketebalan huruf */
+        	color: #585858; /* Warna abu-abu gelap agar senada */
+        	letter-spacing: 1px; /* Jarak huruf nama normal */
+        	margin-top: 4px; /* Jarak antara tulisan PORTFOLIO dan nama */
+        	text-transform: none; 
+    	}
 	</style>
 </head>
 <body class="is-preload">
@@ -33,10 +55,13 @@
 			<div class="inner">
 
 				<a href="index.html" class="logo">
-					<span class="symbol"><img src="images/logo.svg" alt="Logo" /></span>
-					<span class="title">PORTFOLIO</span>
+    				<span class="symbol"><img src="images/logo.svg" alt="Logo" /></span>
+    
+    				<span class="title-wrapper">
+        				<span class="title">PORTFOLIO</span>
+        				<span class="subtitle">Design By: Mayrizky Hakim</span>
+    				</span>
 				</a>
-
 				<nav>
 					<ul>
 						<li><a href="#menu">Menu</a></li>
