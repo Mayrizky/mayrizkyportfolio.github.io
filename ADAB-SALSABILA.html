@@ -12,13 +12,17 @@
 
 		/* 2. MENGUBAH WARNA TEKS DAN JUDUL */
 		#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6,
-		.logo .title, #menu ul li a {
+		.logo .title {
 			color: #585858 !important;
 		}
 		
 		/* 3. MENGUBAH WARNA GARIS BAWAH JUDUL */
 		#main h1::after, #main h2::after {
 			background-color: #f4ede6 !important;
+		/* 4. MENGUBAH WARNA TEKS DI DALAM MENU SIDEBAR (BARU) */
+    	/* Warna putih agar kontras dengan background abu-abu gelap di sidebar */
+    	#menu ul li a {
+        	color: #FFFFFF !important;
 		}
 	</style>
 </head>
@@ -43,13 +47,17 @@
 		</header>
 
 		<nav id="menu">
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">About Me</a></li>
-				<li><a href="generic.html">Book Cover Projects</a></li>
-				<li><a href="generic.html">Contact</a></li>
-			</ul>
+    		<h2>Menu</h2>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+        
+        		<li><a href="about.html">About Me</a></li>
+        
+        		<li><a href="ADAB-SALSABILA.html">Book Cover Design</a></li>
+        		<li><a href="illustration.html">Illustration Works</a></li>
+        
+        		<li><a href="#footer">Contact Me</a></li>
+    		</ul>
 		</nav>
 
 		<div id="main">
