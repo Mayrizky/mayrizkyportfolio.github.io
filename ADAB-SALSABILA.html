@@ -5,33 +5,33 @@
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	
 	<style>
+		/* 1. MENGUBAH WARNA BACKGROUND UTAMA WEB */
+		body, #wrapper {
+			background-color: #522826 !important;
+		}
 
-    	/* 1. MENGUBAH WARNA BACKGROUND UTAMA WEB */
-    	body, #wrapper {
-        	background-color: #D1F4FF !important;
-    	}
+		/* 2. MENGUBAH WARNA TEKS DAN JUDUL KONTEN */
+		#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+			color: #585858 !important;
+		}
+	
+		/* 3. MENGUBAH WARNA GARIS BAWAH JUDUL */
+		#main h1::after, #main h2::after {
+			background-color: #f4ede6 !important;
+		}
 
-    	/* 2. MENGUBAH WARNA TEKS DAN JUDUL */
-    	#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-        	color: #585858 !important;
-    	}
-    
-    	/* 3. MENGUBAH WARNA GARIS BAWAH JUDUL */
-    	#main h1::after, #main h2::after {
-        	background-color: #f4ede6 !important;
-    	}
+		/* 4. MENGUBAH WARNA TEKS DI DALAM MENU SIDEBAR */
+		#menu ul li a {
+			color: #FFFFFF !important;
+		}
 
-    	/* 4. MENGUBAH WARNA TEKS DI DALAM MENU SIDEBAR (BARU) */
-    	/* Warna putih agar kontras dengan background abu-abu gelap di sidebar */
-    	#menu ul li a {
-        	color: #FFFFFF !important;
-    	}
-
-    	/* 5. PENGATURAN KHUSUS WARNA TULISAN PORTFOLIO */
-    	.logo .title {
-        	color: #585858 !important; 
-    	}
-
+		/* 5. PENGATURAN WARNA TULISAN PORTFOLIO (ANTI KUNCIAN MAIN.CSS) */
+		/* Menggunakan hierarki tertinggi agar main.css tidak bisa melawan */
+		body #wrapper #header a.logo span.title {
+			color: #FFFFFF !important; /* Warna putih */
+			letter-spacing: 0.25em !important; /* Standar kerning template bawaan */
+			text-transform: uppercase !important; /* Standar huruf kapital bawaan */
+		}
 	</style>
 </head>
 <body class="is-preload">
