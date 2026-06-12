@@ -24,28 +24,48 @@
     	#menu ul li a {
         	color: #FFFFFF !important;
 
-		/* 5. PENGATURAN HEADER LOGO & NAMA DESAINER */
-    	.logo {
+		/* 5. PENGATURAN LOGO (UKURAN, TEKS BERSUSUN, DAN FONT STANDAR) */
+    
+    	/* Membuat logo dan teks bersebelahan, lalu meratakannya di tengah */
+    	#header .logo {
         	display: inline-flex !important;
-        	align-items: center; /* Menjaga ikon berlian dan teks tetap sejajar tengah */
+        	align-items: center !important;
     	}
-    	.logo .title-wrapper {
+
+    	/* Mengatur ukuran ikon/gambar logo agar lebih besar */
+    	#header .logo .symbol img {
+        	width: 3.5em !important; /* Angka ini memperbesar logo. Standarnya 2em */
+        	height: auto !important;
+        	margin-right: 15px; /* Jarak antara gambar dan teks */
+    	}
+
+    	/* Mengatur wadah teks agar bersusun atas-bawah */
+    	.logo-text-wrapper {
         	display: flex;
-        	flex-direction: column; /* Membuat teks menumpuk atas-bawah */
+        	flex-direction: column;
         	justify-content: center;
     	}
-    	.logo .title {
-        	letter-spacing: 3px !important; /* Ini untuk menurunkan kerning/jarak hurufnya */
-        	line-height: 1 !important;
+
+    	/* Pengaturan teks "PORTFOLIO" */
+    	#header .logo .main-title {
+        	font-weight: 900;
+        	letter-spacing: 3px;
+        	line-height: 1;
+        	color: #585858 !important;
     	}
-    	.logo .subtitle {
-        	font-size: 11px; /* Ukuran teks kecil */
-        	font-weight: 600; /* Ketebalan huruf */
-        	color: #585858; /* Warna abu-abu gelap agar senada */
-        	letter-spacing: 1px; /* Jarak huruf nama normal */
-        	margin-top: 4px; /* Jarak antara tulisan PORTFOLIO dan nama */
-        	text-transform: none; 
+
+    	/* Pengaturan teks "Design By..." dengan huruf besar-kecil normal */
+    	#header .logo .sub-title {
+        	font-family: "Source Sans Pro", Helvetica, sans-serif; /* Font standar template */
+        	font-size: 13px; /* Ukuran teks lebih kecil */
+        	font-weight: normal; /* Ketebalan font standar (tidak bold) */
+        	letter-spacing: 1px;
+        	color: #585858 !important;
+        	text-transform: none !important; /* INI KUNCI untuk mematikan huruf kapital semua! */
+        	margin-top: 4px; /* Jarak dengan tulisan PORTFOLIO di atasnya */
+        	line-height: 1;
     	}
+			
 	</style>
 </head>
 <body class="is-preload">
@@ -57,9 +77,9 @@
 				<a href="index.html" class="logo">
     				<span class="symbol"><img src="images/logo.svg" alt="Logo" /></span>
     
-    				<span class="title-wrapper">
-        				<span class="title">PORTFOLIO</span>
-        				<span class="subtitle">Design By: Mayrizky Hakim</span>
+    				<span class="logo-text-wrapper">
+        				<span class="main-title">PORTFOLIO</span>
+        				<span class="sub-title">Design By: Mayrizky Hakim</span>
     				</span>
 				</a>
 				<nav>
